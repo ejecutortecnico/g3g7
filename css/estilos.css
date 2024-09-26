@@ -1,0 +1,48 @@
+#intro{ 
+    text-align: center;
+    margin: 20px 0;
+    color: rgb(76, 143, 121);
+}
+
+#logo{ 
+    text-align: center;
+    margin:  0;
+}
+
+#logo img{
+    max-width: 100%;
+    height: auto;
+}
+
+header{
+    display: flex;
+    text-align: center;
+    background-color:  rgb(190, 240, 240);
+    border-radius: 10px;
+}
+header #logo img{
+    width: 200px;
+    margin: 10px;
+}
+
+.linea{
+    border: none;
+    height: 5px;
+    background: linear-gradient(to right, #35839b, rgb(107, 189, 209), #645094);
+    width: 100%;
+    border-radius: 5px;
+}
+header div h1{
+    text-align: center;
+}
+
+header div figure{
+    padding: 0% 150px 0px 0px;
+}
+
+header div h6{
+    text-align: center;
+    margin: 20px 0;
+    color: rgb(76, 143, 121);
+
+}
