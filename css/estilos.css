@@ -97,16 +97,16 @@ header div h4 {
 
 #description nav ul li a {
     text-decoration: none; /* Quitar subrayado */
-    color: #5F8974; /* Color de los enlaces */
+    color: #C3F3E3; /* Color de los enlaces */
     padding: 10px;
     border: 1px solid transparent; /* Añadir borde para efecto */
     border-radius: 5px; /* Bordes redondeados */
     transition: background-color 0.3s, border 0.3s; /* Transiciones suaves */
 }
 
-#description nav ul li a:hover {
-    background-color: #e0e0e0; /* Color de fondo al pasar el mouse */
-    border: 1px solid #5F8974; /* Color del borde al pasar el mouse */
+#description nav ul li a:hover{
+    background-color: #b6b2b2; /* Color de fondo al pasar el mouse */
+    border: 1px solid #1e553a; /* Color del borde al pasar el mouse */
 }
 
 /* Estilos para el menú */
@@ -295,3 +295,247 @@ footer {
 .subtitulo {
     font-weight: bolder;
 }
+
+/*Diseños para nuestra trayectoria*/
+
+.trayectoria {
+    background-color: #ebeee5;
+    padding: 50px 0;
+  }
+  
+  .trayectoria .container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .trayectoria h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .trayectoria p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  
+  .event {
+    background-color: #5F8974;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease;
+  }
+  
+  .event:hover {
+    transform: scale(1.05);
+  }
+  
+  .event h3 {
+    font-size: 1.5em;
+    color: #2c6f6e;
+    margin-bottom: 10px;
+  }
+  
+  .event p {
+    font-size: 1.1em;
+    color: #333;
+  }
+  
+  /* Adaptación a pantallas pequeñas */
+  @media (max-width: 768px) {
+    .timeline {
+      flex-direction: column;
+    }
+  
+    .trayectoria .container {
+      width: 90%;
+    }
+  }
+  
+  .slider {
+    overflow: hidden; /* Oculta las imágenes que no están visibles */
+    position: relative;
+    width: 100%; /* Ancho completo */
+    height: 400px; /* Ajusta según sea necesario */
+}
+
+.slider-container {
+    display: flex;
+    animation: slide 15s infinite; /* Animación para mover las imágenes */
+}
+
+.slide {
+    min-width: 100%; /* Cada diapositiva ocupa todo el contenedor */
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0); /* Primer slide */
+    }
+    20% {
+        transform: translateX(0); /* Mantener el primer slide */
+    }
+    25% {
+        transform: translateX(-100%); /* Desplazar al segundo slide */
+    }
+    45% {
+        transform: translateX(-100%); /* Mantener el segundo slide */
+    }
+    50% {
+        transform: translateX(-200%); /* Desplazar al tercer slide */
+    }
+    70% {
+        transform: translateX(-200%); /* Mantener el tercer slide */
+    }
+    75% {
+        transform: translateX(-300%); /* Desplazar al cuarto slide */
+    }
+    95% {
+        transform: translateX(-300%); /* Mantener el cuarto slide */
+    }
+    100% {
+        transform: translateX(0); /* Regresar al primer slide */
+    }
+}
+
+#testimonios {
+    background-color: #5F8974; /* Color de fondo suave */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centrar texto */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin: 20px 0; /* Margen arriba y abajo */
+}
+
+#testimonios h3 {
+    font-size: 2rem; /* Tamaño de fuente para el título */
+    margin-bottom: 15px; /* Espacio debajo del título */
+    color: #333; /* Color del texto */
+}
+
+.slider-container-test {
+    display: flex; /* Usar flexbox para alinear la imagen y el video */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Alinear verticalmente */
+    gap: 20px; /* Espacio entre imagen y video */
+}
+
+.slide-test img {
+    max-width: 300px; /* Ancho máximo de la imagen */
+    height: auto; /* Mantener la proporción */
+    border-radius: 8px; /* Bordes redondeados para la imagen */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para la imagen */
+}
+
+.slide-video video {
+    max-width: 300px; /* Ancho máximo del video */
+    height: auto; /* Mantener la proporción */
+    border-radius: 8px; /* Bordes redondeados para el video */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para el video */
+}
+
+#contactanos {
+    padding: 20px;
+    background-color: #EED6D3;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    background-color: #836C82; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #5F8974; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+.productos-grid {
+    margin: 20px 0;
+}
+
+.carousel {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    animation: scroll 10s infinite linear; /* Tiempo de duración del carrusel */
+}
+
+.carousel img {
+    width: 100%;
+    max-width: 300px; /* Ancho máximo de las imágenes */
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer a {
+    padding: 10px 15px;
+    background-color: #4CAF50; /* Color verde */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+footer a:hover {
+    background-color: #45a049; /* Color verde más oscuro al pasar el ratón */
+}
+
