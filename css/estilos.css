@@ -1,48 +1,272 @@
-#intro{ 
+/* Estilos existentes */
+#intro {
     text-align: center;
-    margin: 20px 0;
+    margin: 15px 0;
     color: rgb(76, 143, 121);
 }
 
-#logo{ 
+#logo {
     text-align: center;
-    margin:  0;
+    margin: 0;
+    width: 300px;
 }
 
-#logo img{
+#logo img {
     max-width: 100%;
     height: auto;
 }
 
-header{
+header {
     display: flex;
     text-align: center;
-    background-color:  rgb(190, 240, 240);
+    background-color: #C3F3E3;
     border-radius: 10px;
 }
-header #logo img{
+
+header #logo img {
     width: 200px;
     margin: 10px;
 }
 
-.linea{
+.linea {
     border: none;
     height: 5px;
     background: linear-gradient(to right, #35839b, rgb(107, 189, 209), #645094);
     width: 100%;
     border-radius: 5px;
 }
-header div h1{
+
+header div h1 {
     text-align: center;
 }
 
-header div figure{
+header div figure {
     padding: 0% 150px 0px 0px;
 }
 
-header div h6{
+header div h4 {
     text-align: center;
     margin: 20px 0;
     color: rgb(76, 143, 121);
-
 }
+
+/* Flexbox para alinear el logo y la descripción */
+.about-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#logo2 {
+    margin-right: 20px;
+    justify-content: center;
+}
+
+#description {
+    background-color: #C3F3E3;
+    border-radius: 10px;
+    padding: 20px; /* Añadido para mejorar el espaciado interno */
+}
+
+#description h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #516B48;
+}
+
+#description p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #5F8974;
+}
+
+/* Estilos para la sección de navegación de "¿Quiénes somos?" */
+#description nav {
+    margin-top: 20px; /* Añadido para espaciado */
+}
+
+#description nav ul {
+    list-style-type: none; /* Quitar los puntos de la lista */
+    padding: 0; /* Quitar padding */
+}
+
+#description nav ul li {
+    margin-bottom: 10px; /* Espaciado entre elementos de la lista */
+}
+
+#description nav ul li a {
+    text-decoration: none; /* Quitar subrayado */
+    color: #5F8974; /* Color de los enlaces */
+    padding: 10px;
+    border: 1px solid transparent; /* Añadir borde para efecto */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s, border 0.3s; /* Transiciones suaves */
+}
+
+#description nav ul li a:hover {
+    background-color: #e0e0e0; /* Color de fondo al pasar el mouse */
+    border: 1px solid #5F8974; /* Color del borde al pasar el mouse */
+}
+
+/* Estilos para el menú */
+nav {
+    background-color: #5F8974; /* Color de fondo del menú */
+    padding: 10px;
+    position: relative; /* Asegura que el menú se mantenga en su lugar */
+    z-index: 10; /* Asegura que el menú esté por encima de otros elementos */
+}
+
+.menu {
+    list-style: none; /* Quitar los puntos de la lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Mostrar el menú en línea horizontal */
+    justify-content: space-around; /* Espaciado uniforme */
+}
+
+.menu li {
+    margin: 0 10px; /* Espaciado entre elementos del menú */
+}
+
+.menu a {
+    text-decoration: none; /* Quitar el subrayado de los enlaces */
+    color: #C3F3E3; /* Color del texto */
+    font-family: 'Poppins', sans-serif; /* Fuente */
+    font-size: 15px; /* Tamaño de la letra */
+    padding: 10px 15px;
+    transition: background-color 0.3s ease; /* Transición para el hover */
+}
+
+.menu a:hover {
+    background-color: #e0e0e0; /* Color de fondo al pasar el mouse */
+    border-radius: 5px; /* Borde redondeado en el hover */
+}
+
+/* Estilos para la sección de ubicación */
+#ubicacion {
+    background-color: #C3F3E3; /* Color de fondo de la sección de ubicación */
+    border-radius: 10px;
+    padding: 20px; /* Añadir espaciado interno */
+    margin-top: 20px; /* Espacio superior */
+}
+
+#ubicacion h2 {
+    font-size: 24px; /* Tamaño del encabezado */
+    margin-bottom: 10px; /* Espacio inferior */
+    color: #516B48; /* Color del encabezado */
+}
+
+#ubicacion p {
+    font-size: 16px; /* Tamaño del texto */
+    line-height: 1.5; /* Espaciado entre líneas */
+    color: #5F8974; /* Color del texto */
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #5F8974; /* Color de fondo oscuro */
+    color: #C3F3E3; /* Color del texto */
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%; /* Asegura que el pie de página ocupe todo el ancho */
+}
+
+.footer-content p {
+    margin: 5px 0; /* Margen para separar los párrafos */
+}
+
+.footer-content a {
+    color: #ff9c00; /* Color de los enlaces */
+    text-decoration: none; /* Quitar subrayado */
+}
+
+.footer-content a:hover {
+    text-decoration: underline; /* Subrayar enlaces al pasar el mouse */
+}
+
+.social-media {
+    list-style: none; /* Quitar los puntos de la lista */
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centrar los enlaces de redes sociales */
+}
+
+.social-media li {
+    margin: 0 10px; /* Espaciado entre los iconos */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+        align-items: center; /* Centrar elementos */
+    }
+
+    #description {
+        text-align: center; /* Centrar el texto */
+        margin-top: 20px; /* Añadir margen superior */
+    }
+
+    .menu {
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+        align-items: center; /* Centrar elementos */
+    }
+
+    .menu li {
+        margin: 5px 0; /* Espaciado vertical entre elementos */
+    }
+}
+
+@media (max-width: 480px) {
+    #description h2 {
+        font-size: 20px; /* Reducir tamaño del encabezado */
+    }
+
+    #description p {
+        font-size: 14px; /* Reducir tamaño del texto */
+    }
+
+    .menu a {
+        font-size: 14px; /* Reducir tamaño del texto del menú */
+        padding: 8px 10px; /* Reducir padding */
+    }
+
+    #ubicacion h2 {
+        font-size: 20px; /* Tamaño del encabezado de ubicación */
+    }
+
+    #ubicacion p {
+        font-size: 14px; /* Tamaño del texto de ubicación */
+    }
+}
+
+#ubicacion {
+    background-color: #C3F3E3; /* Color de fondo */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    margin-top: 20px; /* Espacio superior */
+    text-align: center; /* Centrar el texto y el contenido */
+}
+
+#mapa {
+    display: flex; /* Usar flexbox para centrar el contenido */
+    justify-content: center; /* Centrar horizontalmente */
+}
+
+#mapa iframe {
+    width: 100%; /* Ancho completo del contenedor */
+    max-width: 800px; /* Ancho máximo para pantallas grandes */
+    height: 450px; /* Altura fija, ajusta según sea necesario */
+    border: 0; /* Sin borde */
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 600px) {
+    #mapa iframe {
+        height: 300px; /* Ajusta la altura para pantallas pequeñas */
+    }
+}
+
